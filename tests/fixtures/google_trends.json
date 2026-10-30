@@ -1,0 +1,72 @@
+{
+ "run_id": "cmvkshhtn0u7i41o5pvftf8yz",
+ "slug": "google_trends",
+ "version": "1.1.0",
+ "status": "done",
+ "input": {
+  "country": "us",
+  "max_results": 3
+ },
+ "count": 3,
+ "partial": false,
+ "finished_at": "2026-10-23T09:50:34.435Z",
+ "results": [
+  {
+   "rank": 2,
+   "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIdQSuPGnh1O1NxE23EkAd08UNFhsMcCadYyY6kNU7Lpsd_9S41kSphuCaQ-k",
+   "query": "nyt connections hints",
+   "country": "US",
+   "articles": [
+    {
+     "url": "https://www.nytimes.com/2026/10/22/crosswords/connections-companion-1230.html",
+     "title": "NYT Connections Answers for Friday, October 23, 2026",
+     "source": "The New York Times"
+    },
+    {
+     "url": "https://mashable.com/entertainment/nyt-connections-hints-meanings-october-19-2026",
+     "title": "NYT Connections hints today: Meanings for each word for Oct. 19, 2026",
+     "source": "Mashable"
+    },
+    {
+     "url": "https://www.rockpapershotgun.com/connections-hint-answers-16-10-26",
+     "title": "Here's your NYT Connections hint for Friday Oct 16",
+     "source": "Rock Paper Shotgun"
+    }
+   ],
+   "published": "Fri, 23 Oct 2026 02:20:00 -0700",
+   "traffic_min": 100,
+   "published_at": "2026-10-23T09:20:00.000Z",
+   "article_count": 3,
+   "approx_traffic": "100+"
+  },
+  {
+   "rank": 3,
+   "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLFO7lxNQ8VD-Riga-FMnPwTTTMbhSJGobT_RhvAaVFSHba23_wefowSzBqcI",
+   "query": "tonga vs lebanon",
+   "country": "US",
+   "articles": [
+    {
+     "url": "https://www.foxsports.com.au/nrl/nrl-premiership/rugby-league-world-cup-2026-tonga-vs-lebanon-how-to-watch-live-stream-blog-result-highlights-talatau-amone-isaiya-katoa-ruled-out/news-story/3243d1ce1be5371699746d068fb478da",
+     "title": "LIVE: Tonga forced into halves shake-up in blockbuster World Cup clash against Lebanon",
+     "source": "Fox Sports"
+    },
+    {
+     "url": "https://www.sen.com.au/news/2026/10/23/rlwc-2026-chad-townsend-and-jimmy-smith-raise-concerns-over-quality-of-match-ups-in-week-2",
+     "title": "\"Bloodbath central\": Townsend and Smith's dire prediction for Week 2",
+     "source": "SEN"
+    },
+    {
+     "url": "https://www.codesports.com.au/nrl/isaiya-katoa-ruled-out-of-lebanon-clash/video/8bee0e34efb911a1173fc53a77cba62a",
+     "title": "Isaiya Katoa ruled out of Lebanon clash",
+     "source": "CODE Sports"
+    }
+   ],
+   "published": "Fri, 23 Oct 2026 02:10:00 -0700",
+   "traffic_min": 200,
+   "published_at": "2026-10-23T09:10:00.000Z",
+   "article_count": 3,
+   "approx_traffic": "200+"
+  }
+ ],
+ "_note": "Real run of 2026-10-23; the second and third of the three trends are kept."
+}

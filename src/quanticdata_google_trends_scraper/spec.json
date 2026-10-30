@@ -1,0 +1,97 @@
+{
+ "cli": "google-trends",
+ "name": "Google Trends Scraper",
+ "version": "0.1.0",
+ "description": "Google Trends scraper and API for Python and the command line: today's trending searches per country with traffic band and news stories, and 12 months of weekly interest with top and rising related queries for any keyword, as JSON or CSV. Free and open source; no Google API key or proxies needed.",
+ "links": {
+  "repo": "https://github.com/quantumproxies/google-trends-scraper",
+  "page": "https://quanticdata.io/collectors/google-trends-api/?utm_source=github&utm_medium=cli&utm_campaign=google-trends-scraper",
+  "billing": "https://app.quanticdata.io/billing?utm_source=github&utm_medium=cli&utm_campaign=google-trends-scraper",
+  "pricing": "https://quanticdata.io/pricing/?utm_source=github&utm_medium=cli&utm_campaign=google-trends-scraper"
+ },
+ "commands": [
+  {
+   "name": "trending",
+   "collector": "google_trends",
+   "method": "trending",
+   "help": "today's trending searches in a country",
+   "description": "Today's trending searches for a country: the query, Google's traffic band, when it surfaced and the news stories attached to it.",
+   "positional": "country",
+   "positional_is_list": false,
+   "positional_optional": true,
+   "columns": [
+    "rank",
+    "query",
+    "approx_traffic",
+    "article_count",
+    "published_at"
+   ],
+   "sample": "google_trends",
+   "inputs": [
+    {
+     "name": "country",
+     "type": "string",
+     "required": false,
+     "description": "Country whose trending feed to read, as an ISO code: us, gb, de, it... (default us).",
+     "arg": "country"
+    },
+    {
+     "name": "max_results",
+     "type": "integer",
+     "required": false,
+     "description": "How many trends to deliver at most (1–20). You pay only for delivered trends.",
+     "min": 1,
+     "max": 20,
+     "default": 10,
+     "arg": "max_results"
+    }
+   ]
+  },
+  {
+   "name": "interest",
+   "collector": null,
+   "method": "interest",
+   "help": "weekly interest over time and related queries for a keyword",
+   "endpoint": "serp",
+   "fixed": {
+    "engine": "google",
+    "search_type": "trends"
+   },
+   "rows_key": "trends.interest_over_time",
+   "row_field": "value",
+   "description": "Google Trends for a keyword: weekly interest over the last 12 months (0 to 100), plus the top and rising related queries in the full response.",
+   "positional": "query",
+   "positional_is_list": false,
+   "positional_optional": false,
+   "columns": [
+    "date",
+    "value",
+    "partial"
+   ],
+   "sample": "serp_google_trends_interest",
+   "inputs": [
+    {
+     "name": "query",
+     "type": "string",
+     "required": true,
+     "description": "Keyword to read in Google Trends, e.g. \"electric bike\".",
+     "arg": "query"
+    },
+    {
+     "name": "country",
+     "type": "string",
+     "required": false,
+     "description": "Country to read the interest in, as an ISO 3166-1 alpha-2 code (us, gb, de...).",
+     "arg": "country"
+    },
+    {
+     "name": "lang",
+     "type": "string",
+     "required": false,
+     "description": "UI language, e.g. `en`, `it`.",
+     "arg": "lang"
+    }
+   ]
+  }
+ ]
+}

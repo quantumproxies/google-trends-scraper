@@ -1,0 +1,108 @@
+{
+ "input": {
+  "query": "electric bike",
+  "country": "us",
+  "lang": "en"
+ },
+ "response": {
+  "search_metadata": {
+   "status": "Success",
+   "engine": "google",
+   "search_url": "https://trends.google.com/trends/explore?q=electric%20bike&geo=US",
+   "created_at": "2026-10-23T09:55:16.913Z",
+   "total_time_taken": 8.68
+  },
+  "search_parameters": {
+   "engine": "google",
+   "q": "electric bike",
+   "search_type": "trends",
+   "device": "desktop",
+   "country": "us",
+   "language": "en",
+   "page": 1
+  },
+  "trends": {
+   "keywords": [
+    "electric bike"
+   ],
+   "timeframe": "today 12-m",
+   "geo": "US",
+   "interest_over_time": [
+    {
+     "date": "Oct 19 – 25, 2025",
+     "timestamp": 1760832000,
+     "value": 14
+    },
+    {
+     "date": "Apr 5 – 11, 2026",
+     "timestamp": 1775347200,
+     "value": 90
+    },
+    {
+     "date": "Apr 12 – 18, 2026",
+     "timestamp": 1775952000,
+     "value": 100
+    },
+    {
+     "date": "Oct 11 – 17, 2026",
+     "timestamp": 1791676800,
+     "value": 16
+    },
+    {
+     "date": "Oct 18 – 24, 2026",
+     "timestamp": 1792281600,
+     "value": 13,
+     "partial": true
+    }
+   ],
+   "related_queries": {
+    "top": [
+     {
+      "query": "dirt bike",
+      "value": 100,
+      "formatted": "100"
+     },
+     {
+      "query": "electric dirt bike",
+      "value": 99,
+      "formatted": "99"
+     },
+     {
+      "query": "electric mini bike",
+      "value": 46,
+      "formatted": "46"
+     }
+    ],
+    "rising": [
+     {
+      "query": "yozma in 10",
+      "value": 13450,
+      "formatted": "Breakout"
+     },
+     {
+      "query": "yozma",
+      "value": 4850,
+      "formatted": "+4,850%"
+     },
+     {
+      "query": "hyper bicycles e-ride electric pedal assist commuter bike",
+      "value": 4500,
+      "formatted": "+4,500%"
+     }
+    ]
+   }
+  },
+  "pagination": {
+   "current": 1,
+   "next": null,
+   "total_pages": null,
+   "other_pages": {},
+   "available_pages": [
+    1
+   ],
+   "has_next": false
+  }
+ },
+ "finished_at": "2026-10-23T09:55:26Z",
+ "_note": "Real call of 2026-10-23; five of the 53 weekly points kept, three of the 25 top related queries and three of the 14 rising ones. Transport details (attempts, bytes, retries) omitted."
+}

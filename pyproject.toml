@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quanticdata-google-trends-scraper"
+version = "0.1.0"
+description = "Google Trends scraper and API for Python and the command line: today's trending searches per country with traffic band and news stories, and 12 months of weekly interest with top and rising related queries for any keyword, as JSON or CSV. Free and open source; no Google API key or proxies needed."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+authors = [{ name = "QuanticData", email = "hello@quanticdata.io" }]
+keywords = ["google-trends", "google-trends-scraper", "google-trends-api", "trending-searches", "trends", "interest-over-time", "related-queries", "keyword-research", "seo", "market-research", "web-scraping", "python"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+  "Typing :: Typed",
+]
+dependencies = []
+
+[project.optional-dependencies]
+pandas = ["pandas>=1.3"]
+
+[project.scripts]
+google-trends = "quanticdata_google_trends_scraper.__main__:run"
+
+[project.urls]
+Homepage = "https://quanticdata.io/collectors/google-trends-api/?utm_source=github&utm_medium=pypi&utm_campaign=google-trends-scraper"
+Documentation = "https://quanticdata.io/docs/"
+Source = "https://github.com/quantumproxies/google-trends-scraper"
+Issues = "https://github.com/quantumproxies/google-trends-scraper/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"quanticdata_google_trends_scraper" = ["spec.json", "py.typed"]
